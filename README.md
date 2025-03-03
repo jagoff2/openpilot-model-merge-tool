@@ -124,22 +124,22 @@ The resulting model maintains the structure of the first input model but with we
 
 ## Typical Merging Scenarios
 
-### Improving Lane Detection
+### Improving Lane Detection? Maybe?
 ```bash
 python merge_supercombo_fixed.py model_a.onnx model_b.onnx --components lane_lines lane_lines_prob --ratio 0.7
 ```
 
-### Enhancing Lateral Control
+### Enhancing Lateral Control? Worse lateral control? Who knows?
 ```bash
 python merge_supercombo_fixed.py model_a.onnx model_b.onnx --components action_block_out --ratio 0.8
 ```
 
-### Better Lead Vehicle Tracking
+### Better Lead Vehicle Tracking? No lead vehicle tracking? Find out!
 ```bash
 python merge_supercombo_fixed.py model_a.onnx model_b.onnx --components lead lead_prob --ratio 0.6
 ```
 
-### Improved Path Planning
+### Improved Path Planning? Sent directly into the ditch? Endless possibilties. 
 ```bash
 python merge_supercombo_fixed.py model_a.onnx model_b.onnx --components plan --ratio 0.75
 ```
